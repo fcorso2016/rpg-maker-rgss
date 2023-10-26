@@ -58,12 +58,132 @@ module Input
       fail NotImplementedError
     end
 
+    def release(sym)
+      fail NotImplementedError
+    end
+
+    def pressex?(sym)
+      fail NotImplementedError
+    end
+
+    def triggerex?(sym)
+      fail NotImplementedError
+    end
+
+    def repeatex?(sym)
+      fail NotImplementedError
+    end
+
+    def releaseex?(sym)
+      fail NotImplementedError
+    end
+
     def dir4
       fail NotImplementedError
     end
 
     def dir8
       fail NotImplementedError
+    end
+
+    def text_input
+      fail NotImplementedError
+    end
+
+    def text_input=(value)
+      fail NotImplementedError
+    end
+
+    def gets
+      fail NotImplementedError
+    end
+
+    def clipboard
+      fail NotImplementedError
+    end
+
+    def clipboard=(value)
+      fail NotImplementedError
+    end
+
+    def raw_key_state
+      fail NotImplementedError
+    end
+
+    def scroll_v
+      fail NotImplementedError
+    end
+
+    def show_cursor
+      fail NotImplementedError
+    end
+
+    def show_cursor=(value)
+      fail NotImplementedError
+    end
+
+    def mouse_x
+      fail NotImplementedError
+    end
+
+    def mouse_y
+      fail NotImplementedError
+    end
+
+    def mouse_in_window?
+      fail NotImplementedError
+    end
+
+    module Controller
+
+      def connected?
+        fail NotImplementedError
+      end
+
+      def name
+        fail NotImplementedError
+      end
+
+      def pressex?(sym)
+        fail NotImplementedError
+      end
+
+      def triggerex?(sym)
+        fail NotImplementedError
+      end
+
+      def repeatex?(sym)
+        fail NotImplementedError
+      end
+
+      def releaseex?(sym)
+        fail NotImplementedError
+      end
+
+      def power_level
+        fail NotImplementedError
+      end
+
+      def axes_left
+        fail NotImplementedError
+      end
+
+      def axes_right
+        fail NotImplementedError
+      end
+
+      def axes_trigger
+        fail NotImplementedError
+      end
+
+      def raw_button_states
+        fail NotImplementedError
+      end
+
+      def raw_axes
+        fail NotImplementedError
+      end
+
     end
 
   end

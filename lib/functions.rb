@@ -6,7 +6,7 @@ def rgss_stop
   fail NotImplementedError
 end
 
-def load_data(filename)
+def load_data(filename, restore = true)
   File.open(filename, 'rb') do |f|
     Marshal.load(f)
   end

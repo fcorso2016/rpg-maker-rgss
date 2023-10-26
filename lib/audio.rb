@@ -17,6 +17,14 @@ module Audio
       fail NotImplementedError
     end
 
+    def self.bgm_volume(track = nil)
+      fail NotImplementedError
+    end
+
+    def self.bgm_set_volume(vol, track = nil)
+      fail NotImplementedError
+    end
+
     def bgm_pos
       fail NotImplementedError
     end

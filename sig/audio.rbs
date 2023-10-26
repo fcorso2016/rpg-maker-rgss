@@ -1,20 +1,22 @@
 module Audio
-  def self.setup_midi: -> void
+  def setup_midi: -> void
 
-  def self.bgm_play: (String filename,  Integer ?volume, Integer ?pitch, Integer ?pos) -> void
-  def self.bgm_stop: -> void
-  def self.bgm_fade: (Integer time) -> void
-  def self.bgm_pos: -> Integer
+  def bgm_play: (String filename,  Integer ?volume, Integer ?pitch, Integer ?pos) -> void
+  def bgm_stop: -> void
+  def bgm_fade: (Integer time) -> void
+  def bgm_pos: -> Integer
+  def bgm_volume: (?Integer track) -> Integer
+  def bgm_set_volume: (Integer vol, ?Integer track) -> void
 
-  def self.bgs_play: (String filename, Integer ?volume, Integer ?pitch, Integer ?pos) -> void
-  def self.bgs_fade: (Integer time) -> void
-  def self.bgs_pos: -> Integer
+  def bgs_play: (String filename, Integer ?volume, Integer ?pitch, Integer ?pos) -> void
+  def bgs_fade: (Integer time) -> void
+  def bgs_pos: -> Integer
 
-  def self.me_play: (String filename, Integer ?volume, Integer ?pitch) -> void
-  def self.me_stop: -> void
-  def self.me_fade: (Integer time) -> void
+  def me_play: (String filename, Integer ?volume, Integer ?pitch) -> void
+  def me_stop: -> void
+  def me_fade: (Integer time) -> void
 
-  def self.se_play: (String filename, Integer ?volume, Integer ?pitch) -> void
-  def self.se_stop: -> void
+  def se_play: (String filename, Integer ?volume, Integer ?pitch) -> void
+  def se_stop: -> void
 end
 
