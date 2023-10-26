@@ -1,6 +1,6 @@
 # coding: utf-8
 Gem::Specification.new do |spec|
-  spec.name          = 'rpg-maker-rgss3'
+  spec.name          = 'mkxpz-rgss3'
   spec.version       = '1.02.0'
   spec.authors       = ['Enterbrain', 'Michael Miller']
   spec.email         = ['bluepixelmike@gmail.com']
