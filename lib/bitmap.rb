@@ -1,5 +1,9 @@
 class Bitmap
 
+  def self.max_size
+    fail NotImplementedError
+  end
+
   def initialize(arg1, height)
     fail NotImplementedError
   end
@@ -76,6 +80,67 @@ class Bitmap
     fail NotImplementedError
   end
 
+  def mega?
+    fail NotImplementedError
+  end
+
+  def to_file(path)
+    fail NotImplementedError
+  end
+
+  def animated?
+    fail NotImplementedError
+  end
+
+  def current_frame
+    fail NotImplementedError
+  end
+
+  def frame_count
+    fail NotImplementedError
+  end
+
+
+  def play
+    fail NotImplementedError
+  end
+
+  def stop
+    fail NotImplementedError
+  end
+
+  def goto_and_play(pos)
+    fail NotImplementedError
+  end
+
+  def goto_and_stop(pos)
+    fail NotImplementedError
+  end
+
+  def next_frame
+    fail NotImplementedError
+  end
+
+  def previous_frame
+    fail NotImplementedError
+  end
+
+  def add_frame(source, position = -1)
+    fail NotImplementedError
+  end
+
+  def remove_frame(position = 0)
+    fail NotImplementedError
+  end
+
+  def snap_to_bitmap(position = 0)
+    fail NotImplementedError
+  end
+
   attr_accessor :font
+  attr_accessor :raw_data
+  attr_accessor :playing
+  attr_accessor :looping
+  attr_accessor :frame_rate
 
 end
