@@ -4,7 +4,7 @@ class Bitmap
     fail NotImplementedError
   end
 
-  def initialize(arg1, height)
+  def initialize(arg1, height = nil)
     fail NotImplementedError
   end
 
