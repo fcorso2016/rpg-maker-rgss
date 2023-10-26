@@ -76,4 +76,22 @@ class Sprite
 
   attr_accessor :tone
 
+  attr_accessor :pattern
+
+  attr_accessor :pattern_blend_type
+
+  attr_accessor :pattern_tile
+
+  attr_accessor :pattern_scroll_x
+
+  attr_accessor :pattern_scroll_y
+
+  attr_accessor :pattern_opacity
+
+  attr_accessor :pattern_zoom_x
+
+  attr_accessor :pattern_zoom_y
+
+  attr_accessor :invert
+
 end
