@@ -16,13 +16,15 @@ class Tilemap
     fail NotImplementedError
   end
 
-  attr_accessor :bitmaps
+  attr_accessor :tileset
+
+  attr_accessor :autotiles
 
   attr_accessor :map_data
 
   attr_accessor :flash_data
 
-  attr_accessor :flags
+  attr_accessor :priorities
 
   attr_accessor :viewport
 

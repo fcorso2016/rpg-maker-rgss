@@ -16,21 +16,11 @@ class Window
     fail NotImplementedError
   end
 
-  def move(x, y, width, height)
-    fail NotImplementedError
-  end
-
-  def open?
-    fail NotImplementedError
-  end
-
-  def close?
-    fail NotImplementedError
-  end
-
   attr_accessor :windowskin
 
   attr_accessor :contents
+
+  attr_accessor :stretch
 
   attr_accessor :cursor_rect
 
@@ -39,8 +29,6 @@ class Window
   attr_accessor :active
 
   attr_accessor :visible
-
-  attr_accessor :arrows_visible
 
   attr_accessor :pause
 
@@ -58,18 +46,10 @@ class Window
 
   attr_accessor :oy
 
-  attr_accessor :padding
-
-  attr_accessor :padding_bottom
-
   attr_accessor :opacity
 
   attr_accessor :back_opacity
 
   attr_accessor :contents_opacity
-
-  attr_accessor :openness
-
-  attr_accessor :tone
 
 end
