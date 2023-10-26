@@ -12,7 +12,7 @@ module RPG
         @step_anime = false
         @direction_fix = false
         @through = false
-        @priority_type = 0
+        @always_on_top = false
         @trigger = 0
         @list = [RPG::EventCommand.new]
       end
@@ -26,7 +26,7 @@ module RPG
       attr_accessor :step_anime
       attr_accessor :direction_fix
       attr_accessor :through
-      attr_accessor :priority_type
+      attr_accessor :always_on_top
       attr_accessor :trigger
       attr_accessor :list
     end

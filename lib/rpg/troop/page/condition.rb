@@ -3,7 +3,6 @@ module RPG
     class Page
       class Condition
         def initialize
-          @turn_ending = false
           @turn_valid = false
           @enemy_valid = false
           @actor_valid = false
@@ -16,7 +15,6 @@ module RPG
           @actor_hp = 50
           @switch_id = 1
         end
-        attr_accessor :turn_ending
         attr_accessor :turn_valid
         attr_accessor :enemy_valid
         attr_accessor :actor_valid

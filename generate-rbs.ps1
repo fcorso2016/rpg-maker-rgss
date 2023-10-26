@@ -5,7 +5,7 @@ Get-ChildItem -Path . -Recurse -File | Resolve-Path -Relative | ForEach-Object {
     if (-NOT (Test-Path $targetPath)) {
         $directory = Split-Path -Parent $targetPath
         New-Item -ItemType Directory -Force -Path $directory
-        typeprof $_ >> $targetPath
+        typeprof $_ -I . >> $targetPath
     }
 }
 Set-Location ..

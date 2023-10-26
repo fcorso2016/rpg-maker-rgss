@@ -2,7 +2,7 @@ module RPG
   class Event
     def initialize(x, y)
       @id = 0
-      @name = ''
+      @name = ""
       @x = x
       @y = y
       @pages = [RPG::Event::Page.new]
