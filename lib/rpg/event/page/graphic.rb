@@ -4,7 +4,7 @@ module RPG
       class Graphic
         def initialize
           @tile_id = 0
-          @character_name = ''
+          @character_name = ""
           @character_index = 0
           @direction = 2
           @pattern = 0

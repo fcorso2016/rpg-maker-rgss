@@ -4,7 +4,7 @@ module RPG
       if @name.empty?
         Audio.me_stop
       else
-        Audio.me_play('Audio/ME/' + @name, @volume, @pitch)
+        Audio.me_play("Audio/ME/" + @name, @volume, @pitch)
       end
     end
     def self.stop

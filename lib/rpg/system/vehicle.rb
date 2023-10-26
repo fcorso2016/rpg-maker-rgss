@@ -2,9 +2,9 @@ module RPG
   class System
     class Vehicle
       def initialize
-        @character_name = ''
+        @character_name = ""
         @character_index = 0
-        @bgm = RPG::BGM.new
+        @bgm = RPG::AudioFile.new
         @start_map_id = 0
         @start_x = 0
         @start_y = 0

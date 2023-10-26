@@ -3,7 +3,7 @@ module RPG
     class Timing
       def initialize
         @frame = 0
-        @se = RPG::SE.new('', 80)
+        @se = RPG::AudioFile.new("", 80)
         @flash_scope = 0
         @flash_color = Color.new(255,255,255,255)
         @flash_duration = 5
@@ -16,4 +16,3 @@ module RPG
     end
   end
 end
-

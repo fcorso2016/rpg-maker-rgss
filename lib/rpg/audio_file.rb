@@ -1,6 +1,6 @@
 module RPG
   class AudioFile
-    def initialize(name = '', volume = 100, pitch = 100)
+    def initialize(name = "", volume = 100, pitch = 100)
       @name = name
       @volume = volume
       @pitch = pitch

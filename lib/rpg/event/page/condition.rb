@@ -13,7 +13,7 @@ module RPG
           @switch2_id = 1
           @variable_id = 1
           @variable_value = 0
-          @self_switch_ch = 'A'
+          @self_switch_ch = "A"
           @item_id = 1
           @actor_id = 1
         end

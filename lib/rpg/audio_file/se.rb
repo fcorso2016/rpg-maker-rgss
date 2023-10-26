@@ -2,7 +2,7 @@ module RPG
   class SE < AudioFile
     def play
       unless @name.empty?
-        Audio.se_play('Audio/SE/' + @name, @volume, @pitch)
+        Audio.se_play("Audio/SE/" + @name, @volume, @pitch)
       end
     end
     def self.stop

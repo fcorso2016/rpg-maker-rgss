@@ -1,7 +1,7 @@
 module RPG
   class MapInfo
     def initialize
-      @name = ''
+      @name = ""
       @parent_id = 0
       @order = 0
       @expanded = false

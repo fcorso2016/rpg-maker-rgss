@@ -2,9 +2,9 @@ module RPG
   class Troop
     def initialize
       @id = 0
-      @name = ''
+      @name = ""
       @members = []
-      @pages = [RPG::Troop::Page.new]
+      @pages = [RPG::BattleEventPage.new]
     end
     attr_accessor :id
     attr_accessor :name
