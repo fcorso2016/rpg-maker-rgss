@@ -45,15 +45,34 @@ module Graphics
       fail NotImplementedError
     end
 
-    def play_movie(filename)
+    def play_movie(filename, volume = 100, allow_skipping = false)
+      fail NotImplementedError
+    end
+
+    def resize_window(width, height, center = false)
+      fail NotImplementedError
+    end
+
+    def center
+      fail NotImplementedError
+    end
+
+    def screenshot(path)
+      fail NotImplementedError
+    end
+
+    def delta
       fail NotImplementedError
     end
 
     attr_accessor :frame_rate
-
     attr_accessor :frame_count
-
     attr_accessor :brightness
+    attr_accessor :scale
+    attr_accessor :fixed_aspect_ratio
+    attr_accessor :smooth_scaling
+    attr_accessor :integer_scaling
+    attr_accessor :last_mile_scaling
 
   end
 end

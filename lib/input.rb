@@ -86,23 +86,7 @@ module Input
       fail NotImplementedError
     end
 
-    def text_input
-      fail NotImplementedError
-    end
-
-    def text_input=(value)
-      fail NotImplementedError
-    end
-
     def gets
-      fail NotImplementedError
-    end
-
-    def clipboard
-      fail NotImplementedError
-    end
-
-    def clipboard=(value)
       fail NotImplementedError
     end
 
@@ -111,14 +95,6 @@ module Input
     end
 
     def scroll_v
-      fail NotImplementedError
-    end
-
-    def show_cursor
-      fail NotImplementedError
-    end
-
-    def show_cursor=(value)
       fail NotImplementedError
     end
 
@@ -133,6 +109,10 @@ module Input
     def mouse_in_window?
       fail NotImplementedError
     end
+
+    attr_accessor :text_input
+    attr_accessor :clipboard
+    attr_accessor :show_cursor
 
     module Controller
 
