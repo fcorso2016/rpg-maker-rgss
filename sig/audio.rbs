@@ -1,14 +1,14 @@
 module Audio
   def setup_midi: -> void
 
-  def bgm_play: (String filename,  Integer ?volume, Integer ?pitch, Integer ?pos) -> void
-  def bgm_stop: -> void
-  def bgm_fade: (Integer time) -> void
+  def bgm_play: (String filename,  Integer ?volume, Integer ?pitch, Integer ?pos, Integer? track) -> void
+  def bgm_stop: (?Integer? track) -> void
+  def bgm_fade: (Integer time, ?Integer? track) -> void
   def bgm_pos: -> Integer
-  def bgm_volume: (?Integer track) -> Integer
-  def bgm_set_volume: (Integer vol, ?Integer track) -> void
+  def bgm_volume: (?Integer? track) -> Integer
+  def bgm_set_volume: (Integer vol, ?Integer? track) -> void
 
-  def bgs_play: (String filename, Integer ?volume, Integer ?pitch, Integer ?pos) -> void
+  def bgs_play: (String filename, ?Integer ?volume, ?Integer ?pitch, ?Integer ?pos) -> void
   def bgs_fade: (Integer time) -> void
   def bgs_pos: -> Integer
 

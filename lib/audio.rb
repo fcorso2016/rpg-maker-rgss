@@ -5,15 +5,15 @@ module Audio
       fail NotImplementedError
     end
 
-    def bgm_play(filename, volume = nil, pitch = nil, pos = nil)
+    def bgm_play(filename, volume = nil, pitch = nil, pos = nil, track = nil)
       fail NotImplementedError
     end
 
-    def bgm_stop
+    def bgm_stop(track = nil)
       fail NotImplementedError
     end
 
-    def bgm_fade(time)
+    def bgm_fade(time, track = nil)
       fail NotImplementedError
     end
 
