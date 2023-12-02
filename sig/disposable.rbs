@@ -2,5 +2,4 @@
 
 interface _Disposable
   def dispose: -> void
-  def disposed?: -> bool
 end

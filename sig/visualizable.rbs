@@ -1,6 +1,6 @@
 interface _Visualizable
 
   def visible: -> bool
-  def visible=: (bool visible) -> void
+  def visible=: (bool visible) -> bool
 
 end
