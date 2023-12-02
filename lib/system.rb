@@ -77,4 +77,8 @@ module System
     fail NotImplementedError
   end
 
+  def self.user_name
+    fail NotImplementedError
+  end
+
 end
